@@ -14,9 +14,9 @@ export default function Header() {
             <nav>
                 <ul className="flex items-center text-[#dbdbdb] gap-12 font-extrabold uppercase text-[21px] font-[Roboto]">
                     <div className="flex gap-5">
-                        <li className="hover:text-white"><a className="relative inline-block after:content-[''] after:absolute after:left-0 after:bottom-[-5px] after:w-0 after:h-[4px] after:bg-[#F10078] after:transition-all after:duration-500 hover:after:w-full" href="#">Quem Somos</a></li>
-                        <li className="hover:text-white"><a className="relative inline-block after:content-[''] after:absolute after:left-0 after:bottom-[-5px] after:w-0 after:h-[4px] after:bg-[#F10078] after:transition-all after:duration-500 hover:after:w-full" href="#">Meditação</a></li>
-                        <li className="hover:text-white"><a className="relative inline-block after:content-[''] after:absolute after:left-0 after:bottom-[-5px] after:w-0 after:h-[4px] after:bg-[#F10078] after:transition-all after:duration-500 hover:after:w-full" href="#">Eventos</a></li>
+                        <li className="hover:text-white"><a className="relative inline-block after:content-[''] after:absolute after:left-0 after:bottom-[-5px] after:w-0 after:h-[4px] after:bg-[#F10078] after:transition-all after:duration-500 hover:after:w-full after:rounded-2xl" href="#">Quem Somos</a></li>
+                        <li className="hover:text-white"><a className="relative inline-block after:content-[''] after:absolute after:left-0 after:bottom-[-5px] after:w-0 after:h-[4px] after:bg-[#F10078] after:transition-all after:duration-500 hover:after:w-full after:rounded-2xl" href="#">Meditação</a></li>
+                        <li className="hover:text-white"><a className="relative inline-block after:content-[''] after:absolute after:left-0 after:bottom-[-5px] after:w-0 after:h-[4px] after:bg-[#F10078] after:transition-all after:duration-500 hover:after:w-full after:rounded-2xl" href="#">Eventos</a></li>
                     </div>
                     <div className="flex gap-5">
                         <li className="hover:text-white"><a href="#"><FaYoutube size={30}/></a></li>

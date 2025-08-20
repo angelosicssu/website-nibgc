@@ -1,5 +1,4 @@
 import { ReactNode } from "react";
-import { FaPlayCircle } from "react-icons/fa";
 
 // inteface serve para definir o formato que os props do component devem seguir
 interface ButtonProps {
@@ -20,7 +19,8 @@ export default function Button({
 }: ButtonProps) {
     const base = "flex uppercase cursor-pointer"
     const variants: Record<string, string> = {
-        primary: "w-fit text-white items-center text-2xl font-bold gap-4 border-4 rounded-lg py-4 px-4 bg-[#D9D9D9]/30 hover:scale-105 transition-all duration-300"
+        primary: "w-fit text-white items-center text-2xl font-bold gap-4 border-4 rounded-lg py-4 px-4 bg-[#D9D9D9]/30 hover:scale-105 transition-all duration-300",
+        secondary: "flex border-2 w-[300px] h-[60px] items-center justify-center font-semibold"
     };
 
     return(

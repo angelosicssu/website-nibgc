@@ -2,6 +2,7 @@ import Header from "./components/Header";
 import Button from "./components/Button";
 import Carousel from "./components/Carousel";
 import { FaPlayCircle } from "react-icons/fa";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -22,11 +23,17 @@ export default function Home() {
         </div>
       </div>
       <Carousel/>
-      <div className="flex py-10 justify-around">
-        <span className="flex w-[500px] h-[500px] bg-[#1F0F82]"></span>
-        <span className="flex w-3 h-full bg-black absolute"></span>
+      <div className="flex py-15 justify-around items-center">
+        <div className="flex">
+          <span className="flex w-[500px] h-[500px] bg-[#1F0F82] shadow-xl/30"></span>
+          <Image src="/image/bg02.png" width={500} height={500} alt="Image" className="absolute m-8 shadow-xl/30"/>
+        </div>        
+        <span className="flex w-2 h-[600px] bg-black absolute"></span>
         <div className="flex flex-col uppercase gap-10 items-center font-bold">
-          <p className="font-black text-5xl text-[#292B4B]">Quem Somos</p>
+          <p className="relative font-extrabold text-5xl text-[#292B4B] inline-block">
+            <span className="relative z-10">Quem Somos</span>
+            <span className="absolute left-[-9] bottom-[-6] w-[360] h-1/2 bg-[#77CAF8] shadow-xl/30"></span>
+          </p>
           <div className="flex flex-col gap-5 text-2xl items-center">
             <p>Há mais de 10 anos, a Nova Igreja Batista Grande <br></br> Circular vem construindo uma história na <br></br>
               cidade de Manaus.
@@ -35,11 +42,19 @@ export default function Home() {
               dinâmicas, tem alcançado <br></br> inúmeras vidas.
             </p>
             <p>A NIBGC está de braços abertos para você! Venha <br></br> nos conhecer e fazer parte desta grande <br></br>
-              e linda família
+              e linda família.
             </p>
+            <div className="flex w-full justify-between my-10">
+              <Button text="Seja Bem Vindo" variant="secondary" />
+              <Button text="Novo Aqui?" variant="secondary" />
+            </div>
           </div>
 
         </div>
+      </div>
+
+      <div>
+        <p>Teste</p>
       </div>
     </main>
   );
