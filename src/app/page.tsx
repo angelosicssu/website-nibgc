@@ -3,6 +3,8 @@ import Button from "./components/Button";
 import Carousel from "./components/Carousel";
 import { FaPlayCircle } from "react-icons/fa";
 import Image from "next/image";
+import NextSchedule from "./components/NextSchedule";
+import Card from "./components/Card";
 
 export default function Home() {
   return (
@@ -25,7 +27,7 @@ export default function Home() {
       <Carousel/>
       <div className="flex py-15 justify-around items-center">
         <div className="flex">
-          <span className="flex w-[500px] h-[500px] bg-[#1F0F82] shadow-xl/30"></span>
+          <span className="flex w-[500px] h-[500px] bg-[#1F0F82] shadow-xl/30 rounded-xs"></span>
           <Image src="/image/bg02.png" width={500} height={500} alt="Image" className="absolute m-8 shadow-xl/30"/>
         </div>        
         <span className="flex w-2 h-[600px] bg-black absolute"></span>
@@ -54,7 +56,18 @@ export default function Home() {
       </div>
 
       <div>
-        <p>Teste</p>
+        <NextSchedule/>
+      </div>
+
+      <div className="flex items-center justify-around py-5">
+        <div className="text-black uppercase font-bold text-5xl">
+          <p className="text-7xl">Conheça</p>
+          <p className="text-7xl">Nossas</p>
+          <p>Programações</p>
+        </div>
+        <div>
+          <Card/>
+        </div>
       </div>
     </main>
   );
