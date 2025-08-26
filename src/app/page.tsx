@@ -59,7 +59,7 @@ export default function Home() {
         <NextSchedule/>
       </div>
 
-      <div className="flex items-center justify-around py-5">
+      <div className="flex items-center justify-around py-10">
         <div className="text-black uppercase font-bold text-5xl">
           <p className="text-7xl">Conheça</p>
           <p className="text-7xl">Nossas</p>
@@ -68,6 +68,10 @@ export default function Home() {
         <div>
           <Card/>
         </div>
+      </div>
+
+      <div>
+        <p>Baixe o APP</p>
       </div>
     </main>
   );
