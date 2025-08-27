@@ -1,10 +1,10 @@
 import Header from "./components/Header";
 import Button from "./components/Button";
-import Carousel from "./components/Carousel";
 import { FaPlayCircle } from "react-icons/fa";
 import Image from "next/image";
 import NextSchedule from "./components/NextSchedule";
-import Card from "./components/Card";
+import TextEffect from "./components/TextEffect";
+import Carousel from "./components/Carousel";
 
 export default function Home() {
   return (
@@ -24,7 +24,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <Carousel/>
+      <TextEffect/>
       <div className="flex py-15 justify-around items-center">
         <div className="flex">
           <span className="flex w-[500px] h-[500px] bg-[#1F0F82] shadow-xl/30 rounded-xs"></span>
@@ -66,7 +66,7 @@ export default function Home() {
           <p>Programações</p>
         </div>
         <div>
-          <Card/>
+          <Carousel/>
         </div>
       </div>
 
