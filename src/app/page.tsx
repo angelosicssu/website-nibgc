@@ -11,7 +11,7 @@ export default function Home() {
     // main screen
     <main>
       <Header/>
-      <div className="bg-[url('/image/photo2.jpg')] h-200 w-[100%] flex justify-between items-center px-20 bg-center bg-cover bg-no-repeat">
+      <div className="bg-[url('/image/others/photo2.jpg')] h-200 w-[100%] flex justify-between items-center px-20 bg-center bg-cover bg-no-repeat">
         <div className="flex flex-col">
           <p className="text-8xl font-bold uppercase text-white">Seja</p>
           <p className="stroke-text text-8xl font-bold uppercase mb-10">Bem Vindo</p>
@@ -70,8 +70,15 @@ export default function Home() {
         </div>
       </div>
 
-      <div>
-        <p>Baixe o APP</p>
+      <div className="bg-[url('/image/others/bg-app.png')] flex items-center justify-around p-10">
+        <div>
+          <p>Fotos do Aplicativo</p>
+        </div>
+        <div className="flex text-white flex-col gap-5">
+          <p className="text-5xl font-bold uppercase">Baixe o App</p>
+          <p className="text-4xl font-bold uppercase bg-[#FDC301] py-1 px-2">Nib Grande Circular</p>
+          <p>Texto Texto Texto Texto Texto Texto Texto</p>
+        </div>
       </div>
     </main>
   );
