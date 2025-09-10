@@ -4,7 +4,7 @@ import { ReactNode } from "react";
 interface ButtonProps {
     text: string;
     icon?: ReactNode; //ReactNode -> pode utilizar qualquer componente React
-    variant?: "primary" | "secondary";
+    variant?: "primary" | "secondary" | "third";
     onClick?: () => void;
     className?: string;
 }
@@ -20,7 +20,8 @@ export default function Button({
     const base = "flex uppercase cursor-pointer"
     const variants: Record<string, string> = {
         primary: "w-fit text-white items-center text-2xl font-bold gap-4 border-4 rounded-lg py-4 px-4 bg-[#D9D9D9]/30 hover:scale-105 transition-all duration-300",
-        secondary: "flex border-2 w-[300px] h-[60px] items-center justify-center font-semibold"
+        secondary: "flex border-2 w-[300px] h-[60px] items-center justify-center font-semibold",
+        third: "w-[400px] text-white items-center text-2xl font-bold gap-4 border-4 rounded-lg py-4 px-4 bg-[#D9D9D9]/30"
     };
 
     return(

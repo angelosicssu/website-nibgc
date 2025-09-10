@@ -1,4 +1,4 @@
-import { FaYoutube, FaInstagram, FaSpotify } from "react-icons/fa6";
+import { FaYoutube, FaSpotify } from "react-icons/fa6";
 import { BiLogoInstagramAlt } from "react-icons/bi";
 import Image from "next/image";
 
