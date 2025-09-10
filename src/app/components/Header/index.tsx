@@ -6,7 +6,7 @@ export default function Header() {
     return (
         <div className="flex items-center justify-between py-3 px-7 p bg-linear-to-r from-[#1D0072] to-[#381B8E]">
             <Image 
-            src="/marca.png"
+            src="/image/others/marca.png"
             width={100}
             height={100}
             alt="teste" 

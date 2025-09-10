@@ -1,15 +1,22 @@
+"use client"
+import { useState } from "react";
+import Image from "next/image";
+
+// components
 import Header from "./components/Header";
 import Button from "./components/Button";
-import { FaPlayCircle, FaAppStore } from "react-icons/fa";
-import { IoLogoGooglePlaystore } from "react-icons/io5";
-import { FaYoutube, FaSpotify } from "react-icons/fa6";
-import { BiLogoInstagramAlt } from "react-icons/bi";
-import Image from "next/image";
 import NextSchedule from "./components/NextSchedule";
 import TextEffect from "./components/TextEffect";
 import Carousel from "./components/Carousel";
 
+// icons
+import { FaPlayCircle, FaAppStore } from "react-icons/fa";
+import { IoLogoGooglePlaystore } from "react-icons/io5";
+import { FaYoutube, FaSpotify } from "react-icons/fa6";
+import { BiLogoInstagramAlt } from "react-icons/bi";
+
 export default function Home() {
+  const [showVideo, setShowVideo] = useState(false)
   return (
     // main screen
     <main>
@@ -18,7 +25,19 @@ export default function Home() {
         <div className="flex flex-col">
           <p className="text-8xl font-bold uppercase text-white">Seja</p>
           <p className="stroke-text text-8xl font-bold uppercase mb-10">Bem Vindo</p>
-          <Button text="Nossa Igreja" variant="primary" icon={<FaPlayCircle size={30}/>} />
+          <Button text="Nossa Igreja" variant="primary" icon={<FaPlayCircle size={30}/>} onClick={() => setShowVideo(true)}/>
+          {showVideo && (
+            <div className="fixed inset-0 flex items-center justify-center z-50">
+              <div className="absolute inset-0 bg-black/50 backdrop-blur-sm" onClick={() => setShowVideo(false)}>
+              </div>
+              
+              <div className="relative bg-white p-2 rounded-lg shadow-lg w-[560px] h-[315px] max-w-[90%]">
+                <button onClick={() => setShowVideo(false)} className="absolute -top-3 -right-3 bg-white text-black rounded-full px-2 py-1 text-sm font-bold shadow hover:bg-gray-300 z-10">X</button>
+                <iframe className="w-full h-full rounded-lg" src="https://www.youtube.com/embed/H2ZqQyaXsmg?si=Zr9yuZSuer_WUogo" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+              </div>
+          
+            </div>
+          )}
         </div>
         <div className="flex flex-col items-center gap-5 text-5xl text-white uppercase font-bold">
           <p>Título do Vídeo</p>
@@ -97,8 +116,8 @@ export default function Home() {
           </div>
         </div>
         <div className="flex flex-col items-center uppercase font-bold">
-          <p className="text-3xl">Desenvolvido por</p>
-          <p className="text-6xl">NIB Grande Circular</p>
+          <p className="text-2xl">Desenvolvido por</p>
+          <p className="text-5xl">NIB Grande Circular</p>
         </div>
         <div className="flex flex-col items-center text-xl">
           <p className="font-semibold">Contato</p>
