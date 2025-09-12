@@ -50,7 +50,7 @@ export default function Home() {
       <div className="flex py-15 justify-around items-center">
         <div className="flex">
           <span className="flex w-[500px] h-[500px] bg-[#1F0F82] shadow-xl/30 rounded-xs"></span>
-          <Image src="/image/bg02.png" width={500} height={500} alt="Image" className="absolute m-8 shadow-xl/30"/>
+          <Image src="/image/others/bg02.png" width={500} height={500} alt="Image" className="absolute m-8 shadow-xl/30"/>
         </div>        
         <span className="flex w-2 h-[600px] bg-black absolute"></span>
         <div className="flex flex-col uppercase gap-10 items-center font-bold">
