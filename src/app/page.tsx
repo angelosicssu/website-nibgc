@@ -3,24 +3,19 @@ import { useState } from "react";
 import Image from "next/image";
 
 // components
-import Header from "./components/Header";
-import Button from "./components/Button";
-import NextSchedule from "./components/NextSchedule";
-import TextEffect from "./components/TextEffect";
-import Carousel from "./components/Carousel";
+import Button from "../components/Button";
+import NextSchedule from "../components/NextSchedule";
+import TextEffect from "../components/TextEffect";
+import Carousel from "../components/Carousel";
 
 // icons
 import { FaPlayCircle, FaAppStore } from "react-icons/fa";
-import { IoLogoGooglePlaystore } from "react-icons/io5";
-import { FaYoutube, FaSpotify } from "react-icons/fa6";
-import { BiLogoInstagramAlt } from "react-icons/bi";
 
 export default function Home() {
   const [showVideo, setShowVideo] = useState(false)
   return (
     // main screen
     <main>
-      <Header/>
       <div className="bg-[url('/image/others/photo2.jpg')] h-200 w-[100%] flex justify-between items-center px-20 bg-center bg-cover bg-no-repeat">
         <div className="flex flex-col">
           <p className="text-8xl font-bold uppercase text-white">Seja</p>
@@ -89,39 +84,6 @@ export default function Home() {
         </div>
         <div>
           <Carousel/>
-        </div>
-      </div>
-
-      <div className="bg-[url('/image/others/bg-app.png')] flex items-center justify-around p-10">
-        <div>
-          <Image src='/image/others/cellphone.png' width={500} height={300} alt="Imagem App"/>
-        </div>
-        <div className="flex text-white flex-col gap-5 mt-5">
-          <p className="text-6xl font-bold uppercase">Baixe o App</p>
-          <p className="text-5xl font-bold uppercase bg-[#FDC301] py-2 px-5">Nib Grande Circular</p>
-          <p className="text-2xl">Lorem Ipsum has been the industry's standard dummy text <br></br> 
-          ever since the 1500s, when an unknown printer took a galley <br></br>of type and scrambled it to make a type specimen book.</p>
-          <Button text="Baixe no Google Play" variant="third" icon={<IoLogoGooglePlaystore size={50}/>}/>
-          <Button text="Baixe no App Store" variant="third" icon={<FaAppStore size={50}/>}/>
-        </div>
-      </div>
-
-      <div className="flex justify-between items-center bg-[#140A55] border-t-20 border-white text-white p-10">
-        <div className="flex flex-col items-center gap-5">
-          <Image src='/image/visualIdentity/nib.png' width={120} height={120} alt="Logo Nib"/>
-          <div className="flex gap-8">
-            <a href="#"><FaYoutube size={25}/></a>
-            <a href="#"><BiLogoInstagramAlt size={25}/></a>
-            <a href="#"><FaSpotify size={23}/></a>
-          </div>
-        </div>
-        <div className="flex flex-col items-center uppercase font-bold">
-          <p className="text-2xl">Desenvolvido por</p>
-          <p className="text-5xl">NIB Grande Circular</p>
-        </div>
-        <div className="flex flex-col items-center text-xl">
-          <p className="font-semibold">Contato</p>
-          <p>(92) 99574-1344</p>
         </div>
       </div>
     </main>
