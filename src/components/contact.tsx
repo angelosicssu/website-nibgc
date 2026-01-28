@@ -7,7 +7,7 @@ export const Contact = () => {
     return(
         <Dialog>
         <DialogTrigger asChild>
-            <Button variant="forHeader">Contato</Button>
+            <Button className="cursor-pointer" variant="forHeader">Contato</Button>
         </DialogTrigger>
         <DialogContent>
             <DialogHeader>
