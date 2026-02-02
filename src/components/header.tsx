@@ -12,9 +12,9 @@ export const Header = () => {
             <nav className="flex items-center gap-10">
                 <ul className="flex items-center gap-10">
                     <div className="flex gap-10 text-white font-bold text-xl uppercase">
-                        <li><a className="relative after:absolute after:left-0 after:-bottom-1 after:h-[4px] after:w-0 after:bg-[#F10078]  after:transition-all after:duration-400 hover:after:w-full">Quem Somos</a></li>
-                        <li><a className="relative after:absolute after:left-0 after:-bottom-1 after:h-[4px] after:w-0 after:bg-[#F10078]  after:transition-all after:duration-400 hover:after:w-full">Meditação</a></li>
-                        <li><a className="relative after:absolute after:left-0 after:-bottom-1 after:h-[4px] after:w-0 after:bg-[#F10078]  after:transition-all after:duration-400 hover:after:w-full">Eventos</a></li>
+                        <li><a className="relative after:absolute after:left-0 after:-bottom-1 after:h-[4px] after:w-0 after:bg-[#F10078]  after:transition-all after:duration-400 hover:after:w-full cursor-pointer">Quem Somos</a></li>
+                        <li><a className="relative after:absolute after:left-0 after:-bottom-1 after:h-[4px] after:w-0 after:bg-[#F10078]  after:transition-all after:duration-400 hover:after:w-full cursor-pointer">Meditação</a></li>
+                        <li><a className="relative after:absolute after:left-0 after:-bottom-1 after:h-[4px] after:w-0 after:bg-[#F10078] after:transition-all after:duration-400 hover:after:w-full cursor-pointer">Eventos</a></li>
                     </div>
                     <div className="flex gap-5">
                         <li className="cursor-pointer"><FaYoutube size={30} color="#FFF"/></li>
