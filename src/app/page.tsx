@@ -1,5 +1,7 @@
 import { ButtonVideo } from "@/components/buttonVideo";
+import { CarouselSection } from "@/components/carouselSection";
 import { Header } from "@/components/header";
+import { NextSchedule } from "@/components/nextSchedule";
 import { RollingText } from "@/components/rollingText";
 import { Button } from "@/components/ui/button";
 import { VideoSection } from "@/components/videoSection";
@@ -58,11 +60,14 @@ export default function Home() {
           <div className="flex gap-20">
             <Button variant="outline" className="flex text-xl  cursor-pointer py-7 px-10 font-semibold">SEJA BEM VINDO</Button>
             <Button variant="outline" className="flex text-xl  cursor-pointer py-7 px-10 font-semibold">NOVO AQUI?</Button>
-          </div>
-          
+          </div>    
         </div>
       </section>
       
+      <NextSchedule/>
+
+      <CarouselSection/>
+
     </div>
   );
 }
