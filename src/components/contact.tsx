@@ -7,7 +7,9 @@ export const Contact = () => {
     return(
         <Dialog>
         <DialogTrigger asChild>
-            <Button className="cursor-pointer" variant="forHeader">Contato</Button>
+            <div className="bg-[#FDA402] px-8 py-2 rounded-lg cursor-pointer hover:bg-blue-800 duration-300">
+                <p className="uppercase font-bold text-xl text-white">Contato</p>
+            </div>
         </DialogTrigger>
         <DialogContent>
             <DialogHeader>
